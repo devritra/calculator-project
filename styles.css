@@ -43,3 +43,9 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+#very_bottom{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
