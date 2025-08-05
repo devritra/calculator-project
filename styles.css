@@ -19,3 +19,9 @@ body{
     flex-direction: column;
     padding: 40px;
 }
+
+#display{
+    flex: 1;
+    background-color: white;
+    width: 100%;
+}
