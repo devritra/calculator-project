@@ -49,3 +49,10 @@ body{
     display: flex;
     align-items: center;
 }
+
+#numpad{
+    flex: 1;
+}
+#operator_pad{
+    flex: 1;
+}
