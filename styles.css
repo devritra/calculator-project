@@ -18,12 +18,17 @@ body{
     display: flex;
     flex-direction: column;
     padding: 40px;
+    border-radius: 8px;
 }
 
 #display{
     flex: 1;
     background-color: white;
     width: 100%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 #controls{
@@ -37,22 +42,72 @@ body{
 #equals_to{
     width: 100px;
     height: 50px;
-    background-color: yellow;
+    background-color: rgb(255, 156, 214);
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 #very_bottom{
-    flex: 1;
+    height: 300px;
+    width: 100%;
     display: flex;
-    align-items: center;
+    gap: 5px;
 }
 
 #numpad{
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 #operator_pad{
     flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+#non_zero{
+    height: 240px;
+    width: 240px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.numbers{
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#zero{
+    height: 60px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 5px 0 0;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.operators{
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 10px;
 }
