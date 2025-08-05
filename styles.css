@@ -19,6 +19,7 @@ body{
     flex-direction: column;
     padding: 40px;
     border-radius: 8px;
+    box-shadow: 0 5px 3px rgb(59, 59, 59);
 }
 
 #display{
@@ -29,6 +30,7 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    border: 5px solid rgb(75, 75, 75);
 }
 
 #controls{
@@ -49,6 +51,7 @@ body{
     align-items: center;
     font-size: 32px;
     font-weight: bold;
+    box-shadow: 0 5px 3px rgb(59, 59, 59);
 }
 
 #very_bottom{
@@ -88,6 +91,7 @@ body{
     font-size: 32px;
     font-weight: bold;
     border-radius: 5px;
+    box-shadow: 0 5px 3px rgb(59, 59, 59);
 }
 
 #zero{
@@ -100,6 +104,7 @@ body{
     font-size: 32px;
     font-weight: bold;
     border-radius: 5px;
+    box-shadow: 0 5px 3px rgb(59, 59, 59);
 }
 .operators{
     width: 70px;
@@ -110,4 +115,5 @@ body{
     font-size: 32px;
     font-weight: bold;
     border-radius: 10px;
+    box-shadow: 0 5px 3px rgb(59, 59, 59);
 }
