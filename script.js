@@ -41,9 +41,9 @@ function operate(operator, firstNumber, secondNumber){
             return getSum(number1, number2);
         case "-":
             return getDifference(number1, number2);
-        case "*":
+        case "×":
             return getProduct(number1, number2);
-        case "/":
+        case "÷":
             return getDivision(number1, number2);
     }
 }
@@ -233,12 +233,13 @@ CALC_FRAME.addEventListener("click",(e)=>{
             break;
 
         case "op_plus":
+            if(RHSNo !== ""){
+                LHSNo = operate(operator, LHSNo, RHSNo);
+                LHSNo.toString();
+                RHSNo = "";
+            }
             operator = "+";
             isOpPressed = true;
-            // if(RHSNo !== ""){
-            //     LHSNo = operate(operator, LHSNo, RHSNo);
-            //     LHSNo.toString();
-            // }
             CALC_DISPLAY.innerHTML = "";
             let displayPlus = document.createElement("div");
             displayPlus.textContent += operator;
@@ -247,6 +248,11 @@ CALC_FRAME.addEventListener("click",(e)=>{
             break;
 
         case "op_minus":
+            if(RHSNo !== ""){
+                LHSNo = operate(operator, LHSNo, RHSNo);
+                LHSNo.toString();
+                RHSNo = "";
+            }
             operator = "-";
             isOpPressed = true;
             CALC_DISPLAY.innerHTML = "";
@@ -257,6 +263,11 @@ CALC_FRAME.addEventListener("click",(e)=>{
             break;
 
         case "op_multiply":
+            if(RHSNo !== ""){
+                LHSNo = operate(operator, LHSNo, RHSNo);
+                LHSNo.toString();
+                RHSNo = "";
+            }
             operator = "×";
             isOpPressed = true;
             CALC_DISPLAY.innerHTML = "";
@@ -267,6 +278,11 @@ CALC_FRAME.addEventListener("click",(e)=>{
             break;
 
         case "op_divide":
+            if(RHSNo !== ""){
+                LHSNo = operate(operator, LHSNo, RHSNo);
+                LHSNo.toString();
+                RHSNo = "";
+            }
             operator = "÷";
             isOpPressed = true;
             CALC_DISPLAY.innerHTML = "";
