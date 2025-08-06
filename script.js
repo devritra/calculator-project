@@ -20,3 +20,30 @@ let RHSNo = "";
 let operator = "";
 let output = "";
 let isOpPressed = false;
+
+function getSum(firstNumber, secondNumber){
+    return firstNumber + secondNumber;
+}
+function getDifference(firstNumber, secondNumber){
+    return firstNumber - secondNumber;
+}
+function getProduct(firstNumber, secondNumber){
+    return firstNumber * secondNumber;
+}
+function getDivision(firstNumber, secondNumber){
+    return firstNumber/secondNumber;
+}
+function operate(operator, firstNumber, secondNumber){
+    let number1 = Number(firstNumber);
+    let number2 = Number(secondNumber);
+    switch(operator){
+        case "+":
+            return getSum(number1, number2);
+        case "-":
+            return getDifference(number1, number2);
+        case "*":
+            return getProduct(number1, number2);
+        case "/":
+            return getDivision(number1, number2);
+    }
+}
