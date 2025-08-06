@@ -237,14 +237,14 @@ CALC_FRAME.addEventListener("click",(e)=>{
                 LHSNo = operate(operator, LHSNo, RHSNo);
                 LHSNo.toString();
                 RHSNo = "";
+                CALC_DISPLAY.innerHTML = "";
+                let displayElem = document.createElement("div");
+                displayElem.textContent += LHSNo;
+                displayElem.style.fontSize = "28px";
+                CALC_DISPLAY.appendChild(displayElem);
             }
             operator = "+";
             isOpPressed = true;
-            CALC_DISPLAY.innerHTML = "";
-            let displayPlus = document.createElement("div");
-            displayPlus.textContent += operator;
-            displayPlus.style.fontSize = "28px";
-            CALC_DISPLAY.appendChild(displayPlus);
             break;
 
         case "op_minus":
@@ -252,14 +252,14 @@ CALC_FRAME.addEventListener("click",(e)=>{
                 LHSNo = operate(operator, LHSNo, RHSNo);
                 LHSNo.toString();
                 RHSNo = "";
+                CALC_DISPLAY.innerHTML = "";
+                let displayElem = document.createElement("div");
+                displayElem.textContent += LHSNo;
+                displayElem.style.fontSize = "28px";
+                CALC_DISPLAY.appendChild(displayElem);
             }
             operator = "-";
             isOpPressed = true;
-            CALC_DISPLAY.innerHTML = "";
-            let displayMinus = document.createElement("div");
-            displayMinus.textContent += operator;
-            displayMinus.style.fontSize = "28px";
-            CALC_DISPLAY.appendChild(displayMinus);
             break;
 
         case "op_multiply":
@@ -267,14 +267,14 @@ CALC_FRAME.addEventListener("click",(e)=>{
                 LHSNo = operate(operator, LHSNo, RHSNo);
                 LHSNo.toString();
                 RHSNo = "";
+                CALC_DISPLAY.innerHTML = "";
+                let displayElem = document.createElement("div");
+                displayElem.textContent += LHSNo;
+                displayElem.style.fontSize = "28px";
+                CALC_DISPLAY.appendChild(displayElem);
             }
             operator = "×";
             isOpPressed = true;
-            CALC_DISPLAY.innerHTML = "";
-            let displayMultiply = document.createElement("div");
-            displayMultiply.textContent += operator;
-            displayMultiply.style.fontSize = "28px";
-            CALC_DISPLAY.appendChild(displayMultiply);
             break;
 
         case "op_divide":
@@ -282,14 +282,14 @@ CALC_FRAME.addEventListener("click",(e)=>{
                 LHSNo = operate(operator, LHSNo, RHSNo);
                 LHSNo.toString();
                 RHSNo = "";
+                CALC_DISPLAY.innerHTML = "";
+                let displayElem = document.createElement("div");
+                displayElem.textContent += LHSNo;
+                displayElem.style.fontSize = "28px";
+                CALC_DISPLAY.appendChild(displayElem);
             }
             operator = "÷";
             isOpPressed = true;
-            CALC_DISPLAY.innerHTML = "";
-            let displayDivide = document.createElement("div");
-            displayDivide.textContent += operator;
-            displayDivide.style.fontSize = "28px";
-            CALC_DISPLAY.appendChild(displayDivide);
             break;
 
         case "equals_to":
