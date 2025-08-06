@@ -1,4 +1,4 @@
-const CALC_FRAME = document.querySelector("#frame");
+const CALC_FRAME = document.querySelector(".frame");
 const CALC_DISPLAY = document.querySelector("#display");
 const CLEAR_BTN = document.querySelector("#clear");
 const EQUALS_TO_BTN = document.querySelector("#equals_to");
@@ -47,3 +47,189 @@ function operate(operator, firstNumber, secondNumber){
             return getDivision(number1, number2);
     }
 }
+
+CALC_FRAME.addEventListener("click",(e)=>{
+    let target = e.target;
+    switch(target.id){
+        
+        case "num7":
+            if(isOpPressed === false){
+                LHSNo += "7";
+                CALC_DISPLAY.innerHTML = "";
+                let displayElem = document.createElement("div");
+                displayElem.textContent += LHSNo;
+                displayElem.style.fontSize = "28px";
+                CALC_DISPLAY.appendChild(displayElem);
+            } else {
+                RHSNo += "7";
+                CALC_DISPLAY.innerHTML = "";
+                let displayElem = document.createElement("div");
+                displayElem.textContent += RHSNo;
+                displayElem.style.fontSize = "28px";
+                CALC_DISPLAY.appendChild(displayElem);
+            }
+            break;
+
+        case "num8":
+            if(isOpPressed === false){
+                LHSNo += "8";
+                CALC_DISPLAY.innerHTML = "";
+                let displayElem = document.createElement("div");
+                displayElem.textContent += LHSNo;
+                displayElem.style.fontSize = "28px";
+                CALC_DISPLAY.appendChild(displayElem);
+            } else {
+                RHSNo += "8";
+                CALC_DISPLAY.innerHTML = "";
+                let displayElem = document.createElement("div");
+                displayElem.textContent += RHSNo;
+                displayElem.style.fontSize = "28px";
+                CALC_DISPLAY.appendChild(displayElem);
+            }
+            break;
+
+        case "num9":
+            if(isOpPressed === false){
+                LHSNo += "9";
+                CALC_DISPLAY.innerHTML = "";
+                let displayElem = document.createElement("div");
+                displayElem.textContent += LHSNo;
+                displayElem.style.fontSize = "28px";
+                CALC_DISPLAY.appendChild(displayElem);
+            } else {
+                RHSNo += "9";
+                CALC_DISPLAY.innerHTML = "";
+                let displayElem = document.createElement("div");
+                displayElem.textContent += RHSNo;
+                displayElem.style.fontSize = "28px";
+                CALC_DISPLAY.appendChild(displayElem);
+            }
+            break;
+
+        case "num4":
+            if(isOpPressed === false){
+                LHSNo += "4";
+                CALC_DISPLAY.innerHTML = "";
+                let displayElem = document.createElement("div");
+                displayElem.textContent += LHSNo;
+                displayElem.style.fontSize = "28px";
+                CALC_DISPLAY.appendChild(displayElem);
+            } else {
+                RHSNo += "4";
+                CALC_DISPLAY.innerHTML = "";
+                let displayElem = document.createElement("div");
+                displayElem.textContent += RHSNo;
+                displayElem.style.fontSize = "28px";
+                CALC_DISPLAY.appendChild(displayElem);
+            }
+            break;
+
+        case "num5":
+            if(isOpPressed === false){
+                LHSNo += "5";
+                CALC_DISPLAY.innerHTML = "";
+                let displayElem = document.createElement("div");
+                displayElem.textContent += LHSNo;
+                displayElem.style.fontSize = "28px";
+                CALC_DISPLAY.appendChild(displayElem);
+            } else {
+                RHSNo += "5";
+                CALC_DISPLAY.innerHTML = "";
+                let displayElem = document.createElement("div");
+                displayElem.textContent += RHSNo;
+                displayElem.style.fontSize = "28px";
+                CALC_DISPLAY.appendChild(displayElem);
+            }
+            break;
+
+        case "num6":
+            if(isOpPressed === false){
+                LHSNo += "6";
+                CALC_DISPLAY.innerHTML = "";
+                let displayElem = document.createElement("div");
+                displayElem.textContent += LHSNo;
+                displayElem.style.fontSize = "28px";
+                CALC_DISPLAY.appendChild(displayElem);
+            } else {
+                RHSNo += "6";
+                CALC_DISPLAY.innerHTML = "";
+                let displayElem = document.createElement("div");
+                displayElem.textContent += RHSNo;
+                displayElem.style.fontSize = "28px";
+                CALC_DISPLAY.appendChild(displayElem);
+            }
+            break;
+
+        case "num1":
+            if(isOpPressed === false){
+                LHSNo += "1";
+                CALC_DISPLAY.innerHTML = "";
+                let displayElem = document.createElement("div");
+                displayElem.textContent += LHSNo;
+                displayElem.style.fontSize = "28px";
+                CALC_DISPLAY.appendChild(displayElem);
+            } else {
+                RHSNo += "1";
+                CALC_DISPLAY.innerHTML = "";
+                let displayElem = document.createElement("div");
+                displayElem.textContent += RHSNo;
+                displayElem.style.fontSize = "28px";
+                CALC_DISPLAY.appendChild(displayElem);
+            }
+            break;
+
+        case "num2":
+            if(isOpPressed === false){
+                LHSNo += "2";
+                CALC_DISPLAY.innerHTML = "";
+                let displayElem = document.createElement("div");
+                displayElem.textContent += LHSNo;
+                displayElem.style.fontSize = "28px";
+                CALC_DISPLAY.appendChild(displayElem);
+            } else {
+                RHSNo += "2";
+                CALC_DISPLAY.innerHTML = "";
+                let displayElem = document.createElement("div");
+                displayElem.textContent += RHSNo;
+                displayElem.style.fontSize = "28px";
+                CALC_DISPLAY.appendChild(displayElem);
+            }
+            break;
+
+        case "num3":
+            if(isOpPressed === false){
+                LHSNo += "3";
+                CALC_DISPLAY.innerHTML = "";
+                let displayElem = document.createElement("div");
+                displayElem.textContent += LHSNo;
+                displayElem.style.fontSize = "28px";
+                CALC_DISPLAY.appendChild(displayElem);
+            } else {
+                RHSNo += "3";
+                CALC_DISPLAY.innerHTML = "";
+                let displayElem = document.createElement("div");
+                displayElem.textContent += RHSNo;
+                displayElem.style.fontSize = "28px";
+                CALC_DISPLAY.appendChild(displayElem);
+            }
+            break;
+
+        case "zero":
+            if(isOpPressed === false){
+                LHSNo += "0";
+                CALC_DISPLAY.innerHTML = "";
+                let displayElem = document.createElement("div");
+                displayElem.textContent += LHSNo;
+                displayElem.style.fontSize = "28px";
+                CALC_DISPLAY.appendChild(displayElem);
+            } else {
+                RHSNo += "0";
+                CALC_DISPLAY.innerHTML = "";
+                let displayElem = document.createElement("div");
+                displayElem.textContent += RHSNo;
+                displayElem.style.fontSize = "28px";
+                CALC_DISPLAY.appendChild(displayElem);
+            }
+            break;
+    }
+})
