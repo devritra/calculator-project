@@ -275,5 +275,23 @@ CALC_FRAME.addEventListener("click",(e)=>{
             displayDivide.style.fontSize = "28px";
             CALC_DISPLAY.appendChild(displayDivide);
             break;
+
+        case "equals_to":
+            output += operate(operator, LHSNo, RHSNo);
+            CALC_DISPLAY.innerHTML = "";
+            let displayOutput = document.createElement("div");
+            displayOutput.textContent += output;
+            displayOutput.style.fontSize = "28px";
+            CALC_DISPLAY.appendChild(displayOutput);
+            break;
+
+        case "clear":
+            CALC_DISPLAY.innerHTML = "";
+            LHSNo = "";
+            RHSNo = "";
+            operator = "";
+            output = "";
+            isOpPressed = false;
+            break;
     }
 })
