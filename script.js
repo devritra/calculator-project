@@ -231,5 +231,49 @@ CALC_FRAME.addEventListener("click",(e)=>{
                 CALC_DISPLAY.appendChild(displayElem);
             }
             break;
+
+        case "op_plus":
+            operator = "+";
+            isOpPressed = true;
+            // if(RHSNo !== ""){
+            //     LHSNo = operate(operator, LHSNo, RHSNo);
+            //     LHSNo.toString();
+            // }
+            CALC_DISPLAY.innerHTML = "";
+            let displayPlus = document.createElement("div");
+            displayPlus.textContent += operator;
+            displayPlus.style.fontSize = "28px";
+            CALC_DISPLAY.appendChild(displayPlus);
+            break;
+
+        case "op_minus":
+            operator = "-";
+            isOpPressed = true;
+            CALC_DISPLAY.innerHTML = "";
+            let displayMinus = document.createElement("div");
+            displayMinus.textContent += operator;
+            displayMinus.style.fontSize = "28px";
+            CALC_DISPLAY.appendChild(displayMinus);
+            break;
+
+        case "op_multiply":
+            operator = "×";
+            isOpPressed = true;
+            CALC_DISPLAY.innerHTML = "";
+            let displayMultiply = document.createElement("div");
+            displayMultiply.textContent += operator;
+            displayMultiply.style.fontSize = "28px";
+            CALC_DISPLAY.appendChild(displayMultiply);
+            break;
+
+        case "op_divide":
+            operator = "÷";
+            isOpPressed = true;
+            CALC_DISPLAY.innerHTML = "";
+            let displayDivide = document.createElement("div");
+            displayDivide.textContent += operator;
+            displayDivide.style.fontSize = "28px";
+            CALC_DISPLAY.appendChild(displayDivide);
+            break;
     }
 })
